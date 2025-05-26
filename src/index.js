@@ -6,10 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import "react-router-dom";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import QuizComponent from './components/QuizComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const routes = createBrowserRouter([
   {path: "/", element: <HomePage /> },
+  {path: "/quizSection", element: <QuizComponent />},
 ]);
 root.render(
   <React.StrictMode>

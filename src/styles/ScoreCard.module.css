@@ -1,0 +1,129 @@
+/* ScoreCard.module.css */
+
+.container {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 255, 0.2);
+    text-align: center;
+    max-width: 100%; /* Full width for better responsiveness */
+    min-height: 100vh; /* Occupy full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Start from the top */
+}
+
+.titleDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #003366; /* Dark blue */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.questionsContainer {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 255, 0.1);
+    width: 100%;
+    max-width: 100%; /* Maximum width for readability */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.question {
+    border-bottom: 1px solid #003366;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questionTitle p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #003366;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    background-color: #e6f7ff; /* Light blue */
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.userSelectedOption {
+  background-color: hsl(199, 100%, 85%); /* Blue background */
+  font-weight: bold;
+  border: 2px solid #000000;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+
+.optionText {
+    font-size: 20px;
+    color: #003366;
+}
+
+.selectedSelectedDiv {
+    display: flex;
+}
+
+.selectedAnswerTag {
+    font-size: large;
+    font-weight: bold;
+    color: #003366;
+    margin-left: 10px;
+}
+
+
+.link {
+    display: block;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #003366;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center-align the button */
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #0055cc;
+}

@@ -1,0 +1,144 @@
+.rightDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: auto; /* Allows it to stretch */
+    padding: 30px;
+    background-color: #bbdefb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.questionsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Distribute space evenly */
+    gap: 8px; /* Maintain consistent spacing between buttons */
+    max-height: 180px;
+    overflow-y: scroll;
+}
+
+.questionsDiv button {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1 1 calc(20% - 16px); /* 5 buttons per row with gap adjustment */
+    max-width: calc(25% - 16px); /* Prevent overflow and ensure consistency */
+    text-align: center; /* Center align button text */
+    background-color: #c50000; /* Default color for notVisited */
+}
+
+/* Ensure buttons adjust properly for hover and states */
+.questionsDiv button:hover {
+    background-color: #64b5f6;
+}
+
+.questionsDiv .selectedQuestionButton {
+    background-color: #64b5f6;
+}
+
+.questionsDiv .visitedAnswered {
+    background-color: #00a503;
+}
+
+.questionsDiv .visitedNotAnswered {
+    background-color: #f58300;
+}
+
+.questionsDiv .notVisited {
+    background-color: #c50000;
+}
+
+.questionsInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 8px; /* Space between elements */
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.questionsInfo > div {
+    flex: 1 1 calc(33% - 32px); /* Three sections per row */
+    max-width: auto;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: start; /* Center horizontally */
+    gap: 8px; /* Space between number and caption */
+    text-align: left; /* Align text inside flexbox */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.questionsInfo span:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Text color for the number */
+    padding: 5px 10px; /* Add padding for color box effect */
+    border-radius: 4px; /* Rounded corners for number span */
+}
+
+.questionsInfo span:last-child {
+    font-size: 1rem;
+    color: #424242;
+    font-weight: 500;
+}
+
+/* Specific color coding for each category */
+.questionsInfo .visitedAnswered span:first-child {
+    background-color: #00a503; /* Green background for the number */
+}
+
+.questionsInfo .visitedNotAnswered span:first-child {
+    background-color: #f58300; /* Orange background for the number */
+}
+
+.questionsInfo .notVisited span:first-child {
+    background-color: #c50000; /* Red background for the number */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .questionsDiv button {
+        flex: 1 1 calc(33.33% - 16px); /* Reduce to 3 buttons per row */
+        max-width: calc(33.33% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .questionsDiv button {
+        flex: 1 1 calc(50% - 16px); /* Reduce to 2 buttons per row */
+        max-width: calc(50% - 16px);
+    }
+}
+
+
+/* Buttons Styling */
+.submitBtn {
+    background-color: #1565c0; /* Dark blue */
+    color: #ffffff; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submitBtn:hover {
+    background-color: #0d47a1;
+}
+

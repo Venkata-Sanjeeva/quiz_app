@@ -1,0 +1,73 @@
+
+.quizContainer {
+    display: flex;
+    flex-wrap: nowrap; /* Keep items side by side */
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: stretch; /* Make all child divs equal in height */
+    width: 100%;
+    background-color: #ffffff; /* White background */
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 10px;
+}
+
+.leftDiv {
+    flex: 3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #bbdefb;
+    box-sizing: border-box;
+}
+
+/* Candidate name and timer in the same line */
+.firstDiv {
+    display: flex;
+    justify-content: space-between; /* Spread content across the line */
+    align-items: center; /* Vertically align items */
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+}
+
+.firstDiv h2 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+/* Button group with gap */
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px; /* Increased gap from question component */
+}
+
+/* Buttons Styling */
+.quizButton {
+    background-color: #1565c0; /* Dark blue */
+    color: #ffffff; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quizButton:hover {
+    background-color: #0d47a1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .quizContainer {
+        flex-wrap: wrap; /* Allow stacking on smaller screens */
+        gap: 10px; /* Adjust spacing */
+    }
+
+    .leftDiv {
+        flex: 1 1 100%; /* Full width for stacking */
+    }
+}

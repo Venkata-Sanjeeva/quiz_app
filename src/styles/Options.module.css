@@ -1,0 +1,44 @@
+
+/* Option container */
+.option {
+    display: flex;
+    align-items: center;
+    background-color: #e3f2fd; /* Light blue */
+    padding: 0px 15px;
+    border-radius: 8px;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 5px; /* Space between radio button and text */
+    transition: transform 0.2s ease-in-out;
+}
+
+.option:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Styling the radio button */
+.radioButton {
+    transform: scale(1.6); /* Larger radio button */
+    accent-color: #1565c0; /* Blue selection color */
+    cursor: pointer;
+}
+
+/* Option text styling */
+.optionValue {
+    font-size: 18px;
+    color: #0d47a1; /* Slightly darker blue */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .option {
+        padding: 8px; /* Smaller padding for options */
+        gap: 8px; /* Adjust spacing between elements */
+    }
+
+    .optionValue {
+        font-size: 14px; /* Smaller text for options */
+    }
+}
