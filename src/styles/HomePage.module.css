@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Heading Styles */
+.quizTitle {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #1565c0;
+    text-shadow: 2px 2px 5px rgba(21, 101, 192, 0.3);
+}
+
+/* Container Styles */
+.quizContainer {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+/* Input and Select Containers */
+.inputGroup, .selectGroup, .radioGroup {
+    margin: 15px 0;
+    text-align: left;
+    color: #1565c0;
+}
+
+/* Input Styles */
+.textInput, .selectInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid rgba(21, 101, 192, 0.4);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1565c0;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.textInput:focus, .selectInput:focus {
+    border-color: #0d47a1;
+    box-shadow: 0px 0px 8px rgba(13, 71, 161, 0.5);
+    outline: none;
+}
+
+/* Button Styles */
+.quizButton {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    color: #ffffff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quizButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quizButton:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Radio Group Styles */
+.radioLabel {
+    margin-left: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    scale: 1.2;
+}
+
+/* Placeholder Styles */
+.placeholderText::placeholder {
+    color: rgba(21, 101, 192, 0.6);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .quizContainer {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .quizTitle {
+        font-size: 2.5rem;
+    }
+
+    .quizButton {
+        font-size: 1rem;
+    }
+}
