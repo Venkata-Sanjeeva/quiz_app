@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from "axios";
 import styles from '../styles/HomePage.module.css';
 import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 
 export default function HomePage() {
 
@@ -135,6 +136,7 @@ export default function HomePage() {
 
                 <button className={styles.quizButton} onClick={sendData}>Start Quiz</button>
             </div>
+            <Footer/>
         </>
     );
 }
