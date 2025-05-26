@@ -8,12 +8,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import QuizComponent from './components/QuizComponent';
 import ScoreCard from './components/ScoreCard';
+import NotFoundPage from './components/NotFoundPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const routes = createBrowserRouter([
   {path: "/", element: <HomePage /> },
   {path: "/quizSection", element: <QuizComponent />},
-  {path: "/scoreCard", element: <ScoreCard/>}
+  {path: "/scoreCard", element: <ScoreCard/>},
+  {path: "*", element: <NotFoundPage />}
 ]);
 root.render(
   <React.StrictMode>
